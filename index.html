@@ -2,16 +2,55 @@
 
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Test</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 
 <body>
-	<h1>Hello pages</h1>
-    <p id = "ttt">Also Nataha is the best Cheburaha</p>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <span class="navbar-brand">Резюме</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="aboutme">О себе</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="edu">Образование</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="exp">Опыт работы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="contact">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="aboutme" class="page">
+  Тут я расскажу о себе
+</div>
+
+<div id="edu" class="page">
+  Тут я расскажу о том где я учился
+</div>
+
+<div id="exp" class="page">
+  Тут я расскажу о свое опыте работы
+</div>
+
+<div id="contact" class="page">
+  Тут я дам контакты
+</div>
+
 </body>
 </html>
