@@ -5,11 +5,22 @@ $(document).ready(function(){
     $('.page').hide();
     $('#aboutme').show();
 
-    $('.nav-link').click(
+    //navbar hrefs
+    $('.nav-link, .inline-link').click(
         function(event){
             event.preventDefault();
             $('.page').hide();
-            $('#'+$(this).attr('data-page')).show();
+            var page_id = $(this).attr('data-page')
+            if (page_id!=="print"){
+                $('#'+ page_id).show();
+            } else
+            {
+                $('.page').show();
+                window.print()
+                $('.page').hide();
+                $('#aboutme').show();
+            }
+
         }
     );
 
