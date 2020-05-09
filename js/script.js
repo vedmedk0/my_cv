@@ -1,6 +1,3 @@
-var a = 5;
-
-
 $(document).ready(function(){
     $('.page').hide();
     $('#aboutme').show();
@@ -13,7 +10,7 @@ $(document).ready(function(){
             var page_id = $(this).attr('data-page')
             if (page_id!=="print"){
                 $('#'+ page_id).show();
-            } else
+            } else //pressed "print" button
             {
                 $('.page').show();
                 window.print()
@@ -25,4 +22,3 @@ $(document).ready(function(){
     );
 
 })
-console.log(a);
