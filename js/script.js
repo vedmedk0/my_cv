@@ -1,21 +1,28 @@
 $(document).ready(function(){
+    var timeToFade = 400
+    var currentState = 'aboutme'
     $('.page').hide();
-    $('#aboutme').show();
+    $('#'+currentState).show();
 
     //navbar hrefs
     $('.nav-link, .inline-link').click(
         function(event){
             event.preventDefault();
-            $('.page').hide();
-            var page_id = $(this).attr('data-page')
-            if (page_id!=="print"){
-                $('#'+ page_id).show();
+            var currentPage = $('#' + currentState)
+            currentPage.fadeTo(timeToFade)
+            setTimeout(timeToFade)
+            currentPage.removeAttr('style');
+            currentPage.hide();
+            currentState = $(this).attr('data-page')
+            if (currentState!=="print"){
+                $('#'+ currentState).fadeIn(timeToFade);
             } else //pressed "print" button
             {
                 $('.page').show();
                 window.print()
                 $('.page').hide();
-                $('#aboutme').show();
+                currentState = 'aboutme'
+                $('#'+currentState).show();
             }
 
         }
