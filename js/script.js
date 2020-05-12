@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var timeToFade = 400
+    var timeToFade = 300
     var currentState = 'aboutme'
     $('.page').hide();
     $('#'+currentState).show();
@@ -9,17 +9,17 @@ $(document).ready(function(){
         function(event){
             event.preventDefault();
             var currentPage = $('#' + currentState)
-            currentPage.fadeTo(timeToFade)
-            setTimeout(timeToFade)
-            currentPage.removeAttr('style');
-            currentPage.hide();
             currentState = $(this).attr('data-page')
             if (currentState!=="print"){
-                $('#'+ currentState).fadeIn(timeToFade);
+                currentPage.fadeTo(timeToFade,0,function(){
+                    currentPage.removeAttr('style');
+                    currentPage.hide();
+                    $('#'+ currentState).fadeIn(timeToFade);
+                })
             } else //pressed "print" button
             {
                 $('.page').show();
-                window.print()
+                window.print();
                 $('.page').hide();
                 currentState = 'aboutme'
                 $('#'+currentState).show();
