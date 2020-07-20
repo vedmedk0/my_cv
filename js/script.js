@@ -12,6 +12,7 @@ $(document).ready(function(){
             currentState = $(this).attr('data-page')
             if (currentState!=="print"){
                 currentPage.fadeTo(timeToFade,0,function(){
+                    $(window).scrollTop(0);
                     currentPage.removeAttr('style');
                     currentPage.hide();
                     $('#'+ currentState).fadeIn(timeToFade);
