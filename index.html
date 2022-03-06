@@ -2,265 +2,283 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CV</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>CV</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <span class="navbar-brand">Резюме</span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-page="aboutme"><i class="fa fa-user"></i> О себе</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-page="edu"><i class="fa fa-university"></i> Образование</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-page="exp"><i class="fa fa-briefcase"></i> Опыт работы</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-page="achievments"><i class="fa fa-star"></i> Достижения</a>
-            </li>
-        </ul>
-    </div>
+  <span class="navbar-brand">Curriculum vitae</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="aboutme"><i class="fa fa-user"></i> About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="edu"><i class="fa fa-university"></i> Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="exp"><i class="fa fa-briefcase"></i> Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-page="achievments"><i class="fa fa-star"></i> Achievements</a>
+      </li>
+    </ul>
+  </div>
 
-    <div class="collapse navbar-collapse" id="Print">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-                <a class="nav-link" href="#" data-page="print"><i class="fa fa-print"></i> Распечатать резюме</a>
-            </li>
-        </ul>
-    </div>
+  <div class="collapse navbar-collapse" id="Print">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#" data-page="print"><i class="fa fa-print"></i> Print</a>
+      </li>
+    </ul>
+  </div>
 
 </nav>
 <div>
-    <div id="aboutme" class="page container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 align="center">О себе</h1>
-                <ul>
-                    <li>ФИО: Голубцов Михаил Петрович</li>
-                    <li>Дата рождения: 26 июня 1994 г.</li>
-                    <li>e-mail: <a href="mailto:mp.golubtcov@physics.msu.ru">mp.golubtcov@physics.msu.ru</a></li>
-                    <li>Telegram: <a href="https://t.me/Vedmedk0">@Vedmedk0</a></li>
-                    <li>Github: <a href="https://github.com/vedmedk0">Vedmedk0</a></li>
-                </ul>
-                Области профессиональных интересов: инженерия данных, разработка на Scala/Python, backend, BI, аналитика данных.
-                <br>
-                <br>
-                <h4>Ключевые навыки:</h4>
-                <h5>Языки программирования:</h5>
-                <ul>
-                    <li>Scala</li>
-                    <li>Python (Pandas, Numpy, Sklearn, Networkx, CherryPy, Flask, Django, Beautiful Soup)</li>
-                    <li>SQL</li>
-                    <li>JavaScript (Bootstrap, jQuery, D3)</li>
-                </ul>
-                <h5>Другое:</h5>
-                <ul>
-                    <li>Git</li>
-                    <li>Linux (bash, базовые утилиты)</li>
-                    <li>Docker, Kubernetes</li>
-                    <li>Kafka</li>
-                    <li>Elasticsearch</li>
-                    <li>Работа с БД: ClickHouse, Vertica, PostgreSQL, Oracle, MariaDB</li>
-                    <li>Tableau</li>
-                    <li>LaTeX, HTML, CSS</li>
-                    <li>Английский язык - Upper intermediate</li>
-                </ul>
-                На текущий момент являюсь инженером данных в Департаменте разработки <a href="https://kryptonite.ru">НПК "Криптонит"</a>.
-                <br>
-                <a class="inline-link" href="#" data-page="exp">Подробнее о моем опыте работы</a>
-                <br>
-                Самая главная мотивация - это любознательность, стремление узнать как можно больше,
-                перенимать опыт профессионалов и применять полученные знания. Процесс обучения для меня неотделим
-                от процесса работы, одно без другого теряет смысл. Неконфликтен, считаю себя командным игроком.
-                <br>
-                GPA: 4.8
-                <br>
-                Хобби: Музыка, программирование, фитнес, настольные игры, онлайн-образование (Coursera, Stepik)
-            </div>
-            <div class="col-md-6">
-                <br>
-                <img src="img/photo.jpeg" align="right">
-            </div>
-        </div>
-    </div>
-
-    <div id="edu" class="page container">
-
-        <h1 align="center">Образование</h1>
-        <h3>Магистратура</h3>
-        <div class="row eduitem">
-            <div class="col-md-2"> 2016 - 2018</div>
-            <div class="col-md-10"> МГУ им. М.В. Ломоносова, физический факультет, кафедра физико-математических методов
-                управления, специализация "Системный анализ, физико-математическое моделирование и управление"
-            </div>
-        </div>
-
-        <h3>Бакалавриат</h3>
-        <div class="row eduitem">
-            <div class="col-md-2">2012 - 2016</div>
-            <div class="col-md-10"> МГУ им. М.В. Ломоносова, физический факультет, специальность "Физика"</div>
-        </div>
-
-    </div>
-
-    <div id="exp" class="page container">
-
-        <h1 align="center">Опыт работы</h1>
-        
-        <h4>НПК "Криптонит"</h4>
-        <h5>Старший инженер данных</h5>
-        <div class="row expitem">
-            <div class="col-md-2"> Июль 2020 - н.в.</div>
-            <div class="col-md-10">
-                Реализация компонентов платформы, связанных с обработкой больших данных.
-                Реализация распределенных алгоритмов на больших данных и внедрение моделей машинного обучения.
-                Формирование и обработка больших наборов данных.
-                Участие в разработке архитектуры платформы.
-                <br>
-                <b>Инструменты:</b> Scala, Spark, Kafka, ClickHouse, Elasticsearch, Kubernetes
-            </div>
-        </div>
-
-        <h4>АО "АТС"</h4>
-        <h5>Главный специалист</h5>
-        <div class="row expitem">
-            <div class="col-md-2"> Ноябрь 2018 - Июнь 2020</div>
-            <div class="col-md-10">
-                Развитие единого аналитического хранилища данных, в том числе сопровождение загрузки данных, ведение
-                структуры данных, тестирование и поддержка (актуализация) алгоритмов автоматизированной проверки данных,
-                мониторинг изменений структуры данных в бизнес-системах.
-                Создание и поддержка витрин данных и аналитических продуктов над хранилищем данных (формирование
-                отчетности, численное моделирование), автоматизация деятельности компании.
-                Разработка веб-сервисов для внутреннего пользования.
-                Инновационная деятельность в рамках развития новых бизнес-процессов на рынке.
-                <br>
-                <b>Инструменты:</b> Python, SQL, Tableau, JavaScript.
-            </div>
-        </div>
-
-        <h4>ООО "Информ-Поддержка"</h4>
-        <h5>Аналитик</h5>
-        <div class="row expitem">
-            <div class="col-md-2"> Июнь 2018 - сентябрь 2018</div>
-            <div class="col-md-10">
-                Разработка алгоритмов логистики, анализ и обработка данных, математическое моделирование.
-                <br>
-                <b>Инструменты:</b> Python, SQL, OpenStreetMap API.
-            </div>
-        </div>
-
-        <h4>Институт проблем управления им. В. А. Трапезникова РАН</h4>
-        <h5>Техник</h5>
-        <div class="row expitem">
-            <div class="col-md-2"> Ноябрь 2015 - июнь 2018</div>
-            <div class="col-md-10">
-                Программирование систем управления, анализ и
-                исследование моделей управления, разработка и настройка регуляторов.
-                <br>
-                <b>Инструменты:</b> MATLAB, Simulink, Control Design Toolbox.
-            </div>
-        </div>
-
-
-    </div>
-
-    <div id="achievments" class="page container">
-
-        <h1 align="center">Достижения</h1>
-
-         <h4>НПК "Криптонит"</h4>
-         <ul>
-            <li>Разработал материализованные представления и API для поставки данных backend-сервису и покрыл их интеграционными тестами.</li>
-            <li>Оптимизировал по памяти и времени процедуру создания графа.</li>
-            <li>Добавил функциональность визуализации графа в модуль генерации данных.</li>
-            <li>Разработал ETL из таблицы с данными, развернутыми по интервалам в таблицу с ежедневными данными.</li>
-            <li>Разработал инструмент с cli-интерфейсом для получения агрегированных статистик по данным, с помощью которых производилась верификация алгоритма.</li>
-            <li>Встроил логирование промежуточных величин, необходимых для верификации алгоритма на backend-сервисе.</li>
-            <li>Добавил поддержку нового формата входящих сообщений в конвертер событий.</li>
-            <li>Разработал mock-сервер с REST API для тестирования хранилища, использующего сервер с аналогичным API.</li>
-            <li>Расширил функциональность сервиса, добавив модуль для работы с другим хранилищем с REST API интерфейсом.</li>
-            <li>Добавил возможность фильтрации сообщений логгера о запросах во внутреннюю backend библиотеку.</li>
-            <li>Добавил timeout для подключения к внешнему источнику данных.</li>
-            <li>Разработал генератор тестовых данных для приложения.</li>
-            <li>Разработал ETL для импорта JSON в ElasticSearch и DAO для извлечения импортированных данных. Расширял их функциональность, устранял найденные ошибки, поддерживал новые версии вннутренних библиотек.</li>
-            <li>Поддерживал актуальность конфигураций деплоя проекта для локальной разработки.</li>
-            <li>Предложил несколько вариантов агрегации геоданных. Имплементировал один из них, используя S2-ячейки.</li>
-            <li>Разработал Jupyter Notebook для автоматизации сравнения стратегий анализа данных, выполняемых на backend-сервисе.</li>
-            <li>Добавил поддержку импорта JSON в Elasticsearch из S3 для пайплайнов на Spark.</li>
-            <li>Улучшил скрипт деплоя различных конфигураций проекта через docker-compose.</li>
-            <li>Добавил в ETL функцию записи метаданных о выполненом импорте. Оптимизировал процедуру получения данных о количестве прочитанных записей.</li>
-            <li>Добавил в DAO механизм слияния записей с одинаковыми ключами.</li>
-            <li>Добавил в backend-сервис возможность выдачи данных из S3.</li>
-            <li>Разработал миграцию и мапперы для пилотного проекта.</li>
-            <li>Осуществил масштабный рефакторинг сервиса backend, упростил логику выдачи данных и облегчил ее расширяемость.</li>
-            <li>Документировал процесс выдачи сущностей backend-сервисом, поддерживал изменения в коде и документации.</li>
-            <li>Улучшил точность алгоритма агрегации геоданных.</li>
-            <li>Разработал и протестировал обертку для запуска spark-joba на кластере в OpenShift.</li>
-            <li>Провел собеседования для стажеров.</li>
-            <li>Разработал инструмент проверки качества кластеризации эмбеддингов при разных параметрах.</li>
-            <li>Провел испытания различных решений для индексации эмбеддингов на окружении для разработки (кластер OpenShift, близкий по характеристикам к production). На основе испытаний выбрал наиболее подходящее по характеристикам решение. Разработал план встраивания его в приложение и самостоятельно его реализовал.</li>
-            <li>Составил план разработки сервиса (ML-модель внутри docker-контейнера с gRPC API), передал его в работу стажеру, принял от него результат.</li>
-            <li>Разработал gRPC API и схему хранения метаданных для сервиса импорта произвольных данных в ElasticSearch. Реализовал модули, связанные с созданием индексов в ES, импортом данных и обновлением метаданных.</li>
-            <li>Выступил на внутренней конференции с докладом про Apache Spark.</li>
-         </ul>
-
-        <h4>АО "АТС"</h4>
+  <div id="aboutme" class="page container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 align="center">About me</h1>
         <ul>
-            <li>Подготовил модуль расчета режима энергосистемы для подключения к визуализации на web-странице.</li>
-            <li>Сделал более удобной систему тегов и фильтров для справочника переменных хранилища.</li>
-            <li>Подготовил backend для дэшборда, отражающего состояние деловой игры на базе telegram-бота.</li>
-            <li>Настроил ETL для ежемесячного наполнения витрины данными о погоде.</li>
-            <li>Разработал витрину, используемую для визуализации координат электростанций и метеостанций.</li>
-            <li>Настроил ETL для ежемесячного наполнения витрины данными с Росстата.</li>
-            <li>Провел лекции и практические занятия по разработке на SQL для пользователей хранилища.</li>
-            <li>Разработал компоненты модуля веб-скрейпинга для автоматизации наполнения информационного фонда
-                аналитическими материалами.
-            </li>
-            <li>Автоматизировал развертывание последней версии веб-сервиса на удаленной машине.</li>
-            <li>Разработал систему автоматического тестирования загрузчика витрин с данными розничного рынка
-                электроэнергии.</li>
-            <li>Составил прогноз на цену электроэнергии на рынке на сутки вперед и для регулируемых договоров, в т.ч.
-                используя методы анализа временных рядов.
-            </li>
-            <li>Провел интервью пользователей корпоративного хранилища данных.</li>
-            <li>Разработал прототип CRUD-приложения с авторизацией для работы с данными в витрине.</li>
-            <li>Составил отчет (ETL из систем-источников + дэшборд Tableau) об изменении цен в результате модельных расчетов.</li>
+          <li>Full name: Mikhail Golubtsov</li>
+          <li>Birth date: 26 June 1994 г.</li>
+          <li>e-mail: <a href="mailto:mp.golubtcov@physics.msu.ru">mp.golubtcov@physics.msu.ru</a></li>
+          <li>Telegram: <a href="https://t.me/Vedmedk0">@Vedmedk0</a></li>
+          <li>Github: <a href="https://github.com/vedmedk0">Vedmedk0</a></li>
         </ul>
-        <h4>ООО "Информ-Поддержка"</h4>
+        Areas of interest: data engineering, Scala/Python development, backend, BI, data analytics.
+        <br>
+        <br>
+        <h4>Key skills:</h4>
+        <h5>Programming Languages:</h5>
         <ul>
-            <li>Разработал графический интерфейс для визуализации результата работы алгоритма в статической задаче о
-                назначении грузов.
-            </li>
-            <li> Разработал имитационную динамическую модель грузоперевозок для проверки эффективности различных
-                алгоритмов назначения грузов.
-            </li>
-            <li>Подготовил фреймворк для выгрузки необходимых величин в модуль факторного анализа.</li>
+          <li>Scala</li>
+          <li>Python (Pandas, Numpy, Sklearn, Networkx, CherryPy, Flask, Django, Beautiful Soup)</li>
+          <li>SQL</li>
+          <li>JavaScript (Bootstrap, jQuery, D3)</li>
         </ul>
-        <h4>Институт проблем управления им. В. А. Трапезникова РАН</h4>
+        <h5>Other tools:</h5>
         <ul>
-            <li>Разработал адаптивную прогнозирующую модель для управления вертикальным положением плазмы в токамаке Т-15.
-            </li>
-            <li>Разработал прогнозирующую модель для управления формой плазмы в токамаке "Глобус-М".</li>
-            <li>Опубликовал 3 работы, в т.ч. одну на английском языке.</li>
-            <li>Сделал доклад на международной конференции им. Пятницкого.</li>
+          <li>Git</li>
+          <li>Linux (bash, базовые утилиты)</li>
+          <li>Docker, Kubernetes</li>
+          <li>Kafka</li>
+          <li>Elasticsearch</li>
+          <li>Databases: ClickHouse, Vertica, PostgreSQL, Oracle, MariaDB</li>
+          <li>BI: Tableau</li>
+          <li>LaTeX, HTML, CSS</li>
         </ul>
+        Currently I am a data engineer in the <a href="https://kryptonite.ru">Kryptonite</a>.
+        <br>
+        <a class="inline-link" href="#" data-page="exp">More about my work experience</a>
+        <br>
+        My drivers: curiosity, the desire to learn as much as possible, and apply the acquired knowledge.
+        Learning is inseparable for me from the work, one without the other loses its meaning.
+        Non-confrontational, I consider myself a team player.
+        <br>
+        GPA: 4.8
+        <br>
+        Hobbies: Music, programming, fitness, board games
+      </div>
+      <div class="col-md-6">
+        <br>
+        <img src="img/photo.jpeg" align="right">
+      </div>
     </div>
+  </div>
+
+  <div id="edu" class="page container">
+
+    <h1 align="center">Education</h1>
+    <h3>Master's degree</h3>
+    <div class="row eduitem">
+      <div class="col-md-2"> 2016 - 2018</div>
+      <div class="col-md-10"> Moscow State University, Faculty of Physics,
+        Division of Applied Mathematics, Department of Physical-Mathematical Control Methods,
+        Specialization "System analysis, mathematical modeling and control theory"
+      </div>
+    </div>
+
+    <h3>Bachelor's degree</h3>
+    <div class="row eduitem">
+      <div class="col-md-2">2012 - 2016</div>
+      <div class="col-md-10"> Moscow State University, Faculty of Physics, Specialization "Physics"</div>
+    </div>
+
+  </div>
+
+  <div id="exp" class="page container">
+
+    <h1 align="center">Experience</h1>
+
+    <h4>НПК "Криптонит"</h4>
+    <h5>Senior Data Engineer</h5>
+    <div class="row expitem">
+      <div class="col-md-2"> Jul 2020 - Present</div>
+      <div class="col-md-10">
+        Development of back-end services for data analytics applications.
+        Development of Spark jobs for different data sources.
+        Data analysis on big datasets.
+        Deployment of services.
+        <br>
+        <b>Stack:</b> Scala, Spark, Kafka, ClickHouse, Elasticsearch, CockRoach, Kubernetes
+      </div>
+    </div>
+
+    <h4>OJSC "Trading System Administrator"</h4>
+    <h5>Data Warehouse Specialist</h5>
+    <div class="row expitem">
+      <div class="col-md-2"> Nov 2018 - Jun 2020</div>
+      <div class="col-md-10">
+        Development of an unified analytical data warehouse.
+        Creation and support of data marts and analytical products over the data warehouse.
+        Automation of the company's activities.
+        Development of web services for internal use.
+        Research of new business processes in the market.
+        <br>
+        <b>Stack:</b> Python, SQL, Tableau, JavaScript.
+      </div>
+    </div>
+
+    <h4>LLC "Inform-podderzhka"</h4>
+    <h5>Mathematician-Analyst</h5>
+    <div class="row expitem">
+      <div class="col-md-2"> Jul 2018 - Sep 2018</div>
+      <div class="col-md-10">
+        Development of logistics algorithms.
+        Data analysis and processing.
+        Mathematical modeling.
+        <br>
+        <b>Stack:</b> Python, SQL, OpenStreetMap API.
+      </div>
+    </div>
+
+    <h4>Institute of Control Sciences</h4>
+    <h5>Researcher</h5>
+    <div class="row expitem">
+      <div class="col-md-2"> Nov 2015 - Jun 2018</div>
+      <div class="col-md-10">
+        Programming of control systems
+        Analysis and tuning of controller models
+        <br>
+        <b>Stack:</b> MATLAB, Simulink, Control Design Toolbox.
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="achievments" class="page container">
+
+    <h1 align="center">Achievements</h1>
+
+    <h4>Kryptonite</h4>
+    <ul>
+      <li>Developed material views and API for using in backend-service and covered them by tests.</li>
+      <li>Optimized an algorithm on graph, reduced memory and time consumption.</li>
+      <li>Added visualization functionality to data generation module</li>
+      <li>Developed ETL from table with slowly changing date, to everyday data.</li>
+      <li>Developed cli tool for acquiring aggregated statistics for algorithm verification. Added logging of data for
+        this tool on backend service
+      </li>
+      <li>Added support of new format of input messages in event convertor.</li>
+      <li>Developed mock-server with REST API for testing storage with analogous API.</li>
+      <li>Expanded the functionality of the service by adding module that working with storage with REST API.</li>
+      <li>Added filtration of logger messages in internal backend library.</li>
+      <li>Added timeout for connecting to external data source.</li>
+      <li>Developed test data generator for CockroachDB.</li>
+      <li>Developed ETL for import JSON, CSV and TXT sources to ElasticSearch and DAO for extractingg imported data.
+        Expanded their functionality, fixed bugs, updated library versions.
+      </li>
+      <li>Maintained relevance of deploy configuration of project for local development. Made improvements of deploy
+        scripts.
+      </li>
+      <li>Proposed some variants of geospatial data aggregation. Implemented one of them, using S2-cells. Improved it
+        quality later.
+      </li>
+      <li>Developed Jupyter Notebook for automation of comparison of data analysis strategies, that executed on
+        backend-service.
+      </li>
+      <li>Added to ETL procedure of writing metadata about import job.</li>
+      <li>Added to DAO procedure for merging entities with the same keys.</li>
+      <li>Added to backend-service possibility of loading data from S3.</li>
+      <li>Made significant refactoring of tight coupled back-end modules, made algorithms of data transformation more
+        transparent and easy-to-change.
+      </li>
+      <li>Developed and tested wrapper for running spark job on cluster in OpenShift.</li>
+      <li>Conducted interviews for interns. Mentored new employees.</li>
+      <li>Developed tool for checking quality of embeddings clusterization for various parameters.</li>
+      <li>Made experiments with different solutions for embedding indexation. Analyzed the result, and picked the most
+        effective solution. Made this solution production-ready.
+      </li>
+      <li>Decomposed a service development procedure (ML model inside docker container with gRPC API) on small tasks and
+        gave them to intern
+      </li>
+      <li>Developed gRPC API and metadata scheme for arbitrary data import service. Implemented modules for
+        ElasticSearch data indexation/import and metadata update.
+      </li>
+      <li>Made a presentation at an internal conference about Apache Spark.</li>
+      <li>Improved commonly used template for new projects.</li>
+    </ul>
+
+    <h4>OJSC "Trading System Administrator"</h4>
+    <ul>
+      <li>Connacted power system calculation module to visualization on a web page.</li>
+      <li>Made the system of tags and filters for the catalog of analytical variables in data warehouse more
+        convenient.
+      </li>
+      <li>Prepared backend for dashboard, that represent state of telegram-bot based business game.</li>
+      <li>Developed ETL for monthly weather reports, scraped from site.</li>
+      <li>Developed data mart, for visualizing electric stations and meteorological stations.</li>
+      <li>Developed ETL for monthly Rosstat reports.</li>
+      <li>Conducted lectures and workshops on SQL development for data warehouse users.</li>
+      <li>Developed web-scraping module components for automated filling of CMS with analytical materials</li>
+      <li>Automated deploy process of service on remote server.</li>
+      <li>Proposed and implemented testing framework for data mart loader.</li>
+      <li>Made a forecast for the price of electricity on day ahead market and for regulated contracts, using methods of
+        time series analysis.
+      </li>
+      <li>Conducted interviews with corporate data warehouse users.</li>
+      <li>Proposed CRUD application project for data mart loading, required to replace an existing proprietary CRUD
+        application. Created working prototype.
+      </li>
+      <li>Prepared report (ETL from production system sources + Tableau dashboard) about influence of new alternative
+        model market computations on price changes .
+      </li>
+    </ul>
+    <h4>LLC "Inform-podderzhka"</h4>
+    <ul>
+      <li>Developed a graphical interface for visualizing the result of the algorithm in the static problem of cargo
+        assignment.
+      </li>
+      <li>Developed a dynamic model of cargo transportation to test the effectiveness of various cargo assignment
+        algorithms.
+      </li>
+      <li>Developed framework for loading data into factor analysis module.</li>
+    </ul>
+    <h4>Institute of Control Sciences</h4>
+    <ul>
+      <li>Developed adaptive controller with predicting model of vertical position of math model of plasma in tokamak
+        T-15.
+      </li>
+      <li>Developed controller with predicting model for controlling form of plasma in math model of tokamak Globus-M.
+      </li>
+      <li>Опубликовал 3 работы, в т.ч. одну на английском языке.</li>
+      <li>Published 3 papers, made a report at the international Pyatnitsky conference.</li>
+    </ul>
+  </div>
 
 
 </div>
