@@ -70,12 +70,14 @@ $(document).ready(function(){
             } else //pressed "print" button
             {
                 $('.page').show();
+                $('#expButton').hide();
                 expand_all();
                 window.print();
                 $('.page').hide();
                 currentState = 'aboutme'
                 collapse_all();
                 $('#'+currentState).show();
+                $('#expButton').show();
             }
 
         }
