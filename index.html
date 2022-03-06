@@ -10,6 +10,8 @@
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
+<!--  <link href="css/bootstrap-tour-standalone.min.css" rel="stylesheet">-->
+<!--  <script src="js/bootstrap-tour-standalone.min.js"></script>TODO: make tour-->
 </head>
 
 <body>
@@ -40,7 +42,7 @@
   <div class="collapse navbar-collapse" id="Print">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="#" data-page="print"><i class="fa fa-print"></i> Print</a>
+        <a class="nav-link" href="#" data-page="print"><i class="fa fa-print"></i> Print or export to PDF</a>
       </li>
     </ul>
   </div>
@@ -53,6 +55,8 @@
         <h1 align="center">About me</h1>
         <ul>
           <li>Full name: Mikhail Golubtsov</li>
+          <li>Position: Senior Data Engineer</li>
+          <li>Company: <a href="https://kryptonite.ru">Kryptonite</a></li>
           <li>Birth date: 26 June 1994 г.</li>
           <li>e-mail: <a href="mailto:mp.golubtcov@physics.msu.ru">mp.golubtcov@physics.msu.ru</a></li>
           <li>Telegram: <a href="https://t.me/Vedmedk0">@Vedmedk0</a></li>
@@ -61,36 +65,77 @@
         Areas of interest: data engineering, Scala/Python development, backend, BI, data analytics.
         <br>
         <br>
-        <h4>Key skills:</h4>
-        <h5>Programming Languages:</h5>
-        <ul>
-          <li>Scala</li>
-          <li>Python (Pandas, Numpy, Sklearn, Networkx, CherryPy, Flask, Django, Beautiful Soup)</li>
-          <li>SQL</li>
-          <li>JavaScript (Bootstrap, jQuery, D3)</li>
-        </ul>
-        <h5>Other tools:</h5>
-        <ul>
-          <li>Git</li>
-          <li>Linux (bash, базовые утилиты)</li>
-          <li>Docker, Kubernetes</li>
-          <li>Kafka</li>
-          <li>Elasticsearch</li>
-          <li>Databases: ClickHouse, Vertica, PostgreSQL, Oracle, MariaDB</li>
-          <li>BI: Tableau</li>
-          <li>LaTeX, HTML, CSS</li>
-        </ul>
-        Currently I am a data engineer in the <a href="https://kryptonite.ru">Kryptonite</a>.
+
+        <div id="accordion">
+          <div class="card-header">
+            <h4>Key skills:</h4>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseLang" aria-expanded="true"
+                        aria-controls="collapseLang">
+                  Programming Languages:
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseLang" class="collapse show" aria-labelledby="collapseLang" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Scala</li>
+                  <li>Python (Pandas, Numpy, Sklearn, Networkx, CherryPy, Flask, Django, Beautiful Soup)</li>
+                  <li>SQL</li>
+                  <li>JavaScript (Bootstrap, jQuery, D3)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTools"
+                        aria-expanded="false" aria-controls="collapseTools">
+                  Other tools:
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTools" class="collapse show" aria-labelledby="collapseTools" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Git</li>
+                  <li>Linux (bash, basic utilities)</li>
+                  <li>Docker, Kubernetes</li>
+                  <li>Kafka</li>
+                  <li>Elasticsearch</li>
+                  <li>Databases: ClickHouse, Vertica, PostgreSQL, Oracle, MariaDB</li>
+                  <li>BI: Tableau</li>
+                  <li>LaTeX, HTML, CSS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <br>
-        <a class="inline-link" href="#" data-page="exp">More about my work experience</a>
-        <br>
-        My drivers: curiosity, the desire to learn as much as possible, and apply the acquired knowledge.
-        Learning is inseparable for me from the work, one without the other loses its meaning.
-        Non-confrontational, I consider myself a team player.
-        <br>
-        GPA: 4.8
-        <br>
-        Hobbies: Music, programming, fitness, board games
+        <div class="card" style="width: 40rem;">
+          <div class="card-body">
+            <h5 class="card-title">Personal info</h5>
+            <p class="card-text">My drivers: curiosity, the desire to learn as much as possible, and apply the acquired
+              knowledge.
+              Learning is inseparable for me from the work, one without the other loses its meaning.
+              Non-confrontational, I consider myself a team player.</p>
+            <br>
+            GPA: 4.8
+            <br>
+            Hobbies: Music, programming, fitness, board games
+            <br>
+            <br>
+            <a href="#" class="inline-link btn btn-primary" data-page="exp">More about my experience</a>
+          </div>
+        </div>
+
+
       </div>
       <div class="col-md-6">
         <br>
@@ -99,86 +144,147 @@
     </div>
   </div>
 
-  <div id="edu" class="page container">
+  <div class="pagebreak"> </div>
+
+  <div id="edu" class="page container ">
 
     <h1 align="center">Education</h1>
-    <h3>Master's degree</h3>
-    <div class="row eduitem">
-      <div class="col-md-2"> 2016 - 2018</div>
-      <div class="col-md-10"> Moscow State University, Faculty of Physics,
-        Division of Applied Mathematics, Department of Physical-Mathematical Control Methods,
-        Specialization "System analysis, mathematical modeling and control theory"
+
+    <div class="card" style="width: 100%;">
+      <div class="card-header">
+        Master's degree
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Moscow State University</h3>
+        <p class="card-text">
+        <div class="row eduitem">
+          <div class="col-md-2"> 2016 - 2018</div>
+          <div class="col-md-10"> Faculty of Physics,
+            Division of Applied Mathematics, Department of Physical-Mathematical Control Methods,
+            Specialization "System analysis, mathematical modeling and control theory"
+          </div>
+        </div>
+        </p>
       </div>
     </div>
 
-    <h3>Bachelor's degree</h3>
-    <div class="row eduitem">
-      <div class="col-md-2">2012 - 2016</div>
-      <div class="col-md-10"> Moscow State University, Faculty of Physics, Specialization "Physics"</div>
+    <br>
+
+    <div class="card" style="width: 100%;">
+      <div class="card-header">
+        Bachelor's degree
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Moscow State University</h3>
+        <p class="card-text">
+        <div class="row eduitem">
+          <div class="col-md-2">2012 - 2016</div>
+          <div class="col-md-10">Faculty of Physics, Specialization "Physics"</div>
+        </div>
+        </p>
+      </div>
     </div>
 
+
   </div>
+
+  <div class="pagebreak"> </div>
 
   <div id="exp" class="page container">
 
     <h1 align="center">Experience</h1>
+    <br>
 
-    <h4>НПК "Криптонит"</h4>
-    <h5>Senior Data Engineer</h5>
-    <div class="row expitem">
-      <div class="col-md-2"> Jul 2020 - Present</div>
-      <div class="col-md-10">
-        Development of back-end services for data analytics applications.
-        Development of Spark jobs for different data sources.
-        Data analysis on big datasets.
-        Deployment of services.
-        <br>
-        <b>Stack:</b> Scala, Spark, Kafka, ClickHouse, Elasticsearch, CockRoach, Kubernetes
+    <div class="card" style="width: 100%;">
+      <div class="card-header">
+        Kryptonite
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Senior Data Engineer</h3>
+        <p class="card-text">
+        <div class="row expitem">
+          <div class="col-md-2"> Jul 2020 - Present</div>
+          <div class="col-md-10">
+            Development of back-end services for data analytics applications.
+            Development of Spark jobs for different data sources.
+            Data analysis on big datasets.
+            Deployment of services.
+            <br>
+            <b>Stack:</b> Scala, Spark, Kafka, ClickHouse, Elasticsearch, CockRoach, Kubernetes
+          </div>
+        </div>
+        </p>
       </div>
     </div>
-
-    <h4>OJSC "Trading System Administrator"</h4>
-    <h5>Data Warehouse Specialist</h5>
-    <div class="row expitem">
-      <div class="col-md-2"> Nov 2018 - Jun 2020</div>
-      <div class="col-md-10">
-        Development of an unified analytical data warehouse.
-        Creation and support of data marts and analytical products over the data warehouse.
-        Automation of the company's activities.
-        Development of web services for internal use.
-        Research of new business processes in the market.
-        <br>
-        <b>Stack:</b> Python, SQL, Tableau, JavaScript.
+    <br>
+    <div class="card" style="width: 100%;">
+      <div class="card-header">
+        OJSC "Trading System Administrator"
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Data Warehouse Specialist</h3>
+        <p class="card-text">
+        <div class="row expitem">
+          <div class="col-md-2"> Nov 2018 - Jun 2020</div>
+          <div class="col-md-10">
+            Development of an unified analytical data warehouse.
+            Creation and support of data marts and analytical products over the data warehouse.
+            Automation of the company's activities.
+            Development of web services for internal use.
+            Research of new business processes in the market.
+            <br>
+            <b>Stack:</b> Python, SQL, Tableau, JavaScript.
+          </div>
+        </div>
+        </p>
       </div>
     </div>
-
-    <h4>LLC "Inform-podderzhka"</h4>
-    <h5>Mathematician-Analyst</h5>
-    <div class="row expitem">
-      <div class="col-md-2"> Jul 2018 - Sep 2018</div>
-      <div class="col-md-10">
-        Development of logistics algorithms.
-        Data analysis and processing.
-        Mathematical modeling.
-        <br>
-        <b>Stack:</b> Python, SQL, OpenStreetMap API.
+    <br>
+    <div class="card" style="width: 100%;">
+      <div class="card-header">
+        LLC "Inform-podderzhka"
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Mathematician-Analyst</h3>
+        <p class="card-text">
+        <div class="row expitem">
+          <div class="col-md-2"> Jul 2018 - Sep 2018</div>
+          <div class="col-md-10">
+            Development of logistics algorithms.
+            Data analysis and processing.
+            Mathematical modeling.
+            <br>
+            <b>Stack:</b> Python, SQL, OpenStreetMap API.
+          </div>
+        </div>
+        </p>
       </div>
     </div>
-
-    <h4>Institute of Control Sciences</h4>
-    <h5>Researcher</h5>
-    <div class="row expitem">
-      <div class="col-md-2"> Nov 2015 - Jun 2018</div>
-      <div class="col-md-10">
-        Programming of control systems
-        Analysis and tuning of controller models
-        <br>
-        <b>Stack:</b> MATLAB, Simulink, Control Design Toolbox.
+    <br>
+    <div class="card" style="width: 100%;">
+      <div class="card-header">
+        Institute of Control Sciences
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Researcher</h3>
+        <p class="card-text">
+        <div class="row expitem">
+          <div class="col-md-2"> Nov 2015 - Jun 2018</div>
+          <div class="col-md-10">
+            Programming of control systems.
+            Analysis and tuning of controller models.
+            <br>
+            <b>Stack:</b> MATLAB, Simulink, Control Design Toolbox.
+          </div>
+        </div>
+        </p>
       </div>
     </div>
-
+    <br>
 
   </div>
+
+  <div class="pagebreak"> </div>
 
   <div id="achievments" class="page container">
 
@@ -275,7 +381,6 @@
       </li>
       <li>Developed controller with predicting model for controlling form of plasma in math model of tokamak Globus-M.
       </li>
-      <li>Опубликовал 3 работы, в т.ч. одну на английском языке.</li>
       <li>Published 3 papers, made a report at the international Pyatnitsky conference.</li>
     </ul>
   </div>
